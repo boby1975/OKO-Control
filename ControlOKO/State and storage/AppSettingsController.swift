@@ -9,6 +9,7 @@
 
 import UIKit
 
+//Model controller
 class AppSettingsController {
     
     enum Keys: String {

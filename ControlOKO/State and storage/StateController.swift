@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Model controller
 class StateController {
     fileprivate let storageController: StorageController
     fileprivate(set) var objects: [Object]
