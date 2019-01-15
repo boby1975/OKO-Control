@@ -1,0 +1,48 @@
+/* Class = "UITextField"; placeholder = "<Enter device password>"; ObjectID = "0sR-8S-nkU"; */
+"0sR-8S-nkU.placeholder" = "<Введіть пароль приладу>";
+
+/* Class = "UINavigationItem"; title = "New object"; ObjectID = "6uK-gl-g9Q"; */
+"6uK-gl-g9Q.title" = "Новий об'єкт";
+
+/* Class = "UIButton"; normalTitle = "App password"; ObjectID = "EUy-TV-yqi"; */
+"EUy-TV-yqi.normalTitle" = "Пароль додатку";
+
+/* Class = "UIButton"; normalTitle = "Delete object"; ObjectID = "KYV-HH-eDu"; */
+"KYV-HH-eDu.normalTitle" = "Видалити обєкт";
+
+/* Class = "UINavigationItem"; title = "Objects"; ObjectID = "MHB-UD-zCv"; */
+"MHB-UD-zCv.title" = "Об'єкти";
+
+/* Class = "UITextField"; placeholder = "<Enter object description>"; ObjectID = "P3c-eD-qbe"; */
+"P3c-eD-qbe.placeholder" = "<Введіть опис об'єкту>";
+
+/* Class = "UITextField"; placeholder = "<Enter device phone number>"; ObjectID = "UnH-rV-iBd"; */
+"UnH-rV-iBd.placeholder" = "<Введіть телефонний номер приладу>";
+
+/* Class = "UITextField"; placeholder = "<Enter object name>"; ObjectID = "amO-LB-WMy"; */
+"amO-LB-WMy.placeholder" = "<Введіть назву об'єкту>";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "hE4-Jr-6EN"; */
+"hE4-Jr-6EN.text" = "Назва";
+
+/* Class = "UITextField"; placeholder = "<Choose device type>"; ObjectID = "mUN-pL-ml3"; */
+"mUN-pL-ml3.placeholder" = "<Вкажіть тип приладу>";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "uej-Mr-bQN"; */
+"uej-Mr-bQN.text" = "Опис";
+
+/* Class = "UILabel"; text = "Device type"; ObjectID = "QFo-dU-dJf"; */
+"QFo-dU-dJf.text" = "Тип приладу";
+
+
+/* Class = "UILabel"; text = "Object icon"; ObjectID = "adz-as-2VT"; */
+"adz-as-2VT.text" = "Іконка об'єкту";
+
+/* Class = "UIButton"; normalTitle = "via internet"; ObjectID = "dDA-M1-D37"; */
+"dDA-M1-D37.normalTitle" = "через інтернет";
+
+/* Class = "UIButton"; normalTitle = "via SMS"; ObjectID = "PHg-pN-MlN"; */
+"PHg-pN-MlN.normalTitle" = "через SMS";
+
+/* Class = "UITextField"; placeholder = "<Enter device IMEI>"; ObjectID = "2Kr-0E-WuR"; */
+"2Kr-0E-WuR.placeholder" = "<Введіть IMEI приладу>";

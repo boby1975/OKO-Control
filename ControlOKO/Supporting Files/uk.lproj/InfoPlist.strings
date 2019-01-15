@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  ControlOKO
+
+  Created by iMAC on 04.09.17.
+  Copyright © 2017 OKO. All rights reserved.
+*/
+"CFBundleDisplayName" = "OKO-Control";
+"NSHumanReadableCopyright" = "2017 OKO. Всі права захищені.";

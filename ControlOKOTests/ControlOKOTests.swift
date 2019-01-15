@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ControlOKO
+//@testable import ControlOKO
 
 class ControlOKOTests: XCTestCase {
     

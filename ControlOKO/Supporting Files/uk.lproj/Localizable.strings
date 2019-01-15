@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  ControlOKO
+
+  Created by iMAC on 04.09.17.
+  Copyright © 2017 OKO. All rights reserved.
+*/
+"Welcome" = "Вітання";
+"Cancel" = "Скасувати";
+"SMS services are not available" = "SMS-сервіс недоступний";
+"OK" = "OK";
+"Message was cancelled" = "Повідомлення відмінено";
+"Message failed" = "Помилка повідомлення";
+"Message was sent" = "Повідомлення надіслано";
+"Incorrect password. Try again." = "Невірний пароль. Спробуйте ще.";
+"<Device phone here>" = "<Номер телефону приладу>";
+"<Device password here>" = "<Пароль приладу>";
+"Save" = "Зберегти";
+"Settings" = "Налаштування";
+"<App password here>" = "<Пароль додатку>";
+"Enter app password (empty - OFF)." = "Введіть пароль додатку (пусто - вимкнути перевірку паролю)";
+"Delete" = "Видалити";
+"Object" = "Об'єкт";
+"will be deleted!!!" = "буде видалено!!!";
+"Missing value!" = "Недостатньо даних!";
+"Enter all fields" = "Необхідно ввести назву об'єкту, телефонний номер та пароль приладу. У випадку використання каналу зв'язку \"через інтернет\" необхідно також ввести IMEI приладу.";
+"Enter App Password" = "Введіть пароль додатку";
+"<App Password>" = "<Пароль додатку>";
+"Send command" = "Команду відправлено";
+"Stop session" = "Закриття сесії";
+"Start session" = "Відкриття сесії";
+"No connection to server" = "Відсутній зв'язок з сервером";
+"Try connect to server" = "Підключення до серверу";
+"Connected to server" = "З'єднання встановлено";
+"Socket error" = "Помилка з'єднання";
+"Server ACK" = "Підтвердження сервера";
+"Armed" = "Охорону ВВІМКНУТО";
+"Disarmed" = "Охорону вимкнуто";
+"Rele ON" = "Реле ВВІМКНУТО";
+"Rele OFF" = "Реле вимкнуто";
+"Device ACK" = "Підтвердження приладу";
+"BLITS" = "БЛІЦ";
+"OBEREG" = "ОБЕРІГ";
+"DOMOVOY" = "ДОМОВИЙ";
+"DOM" = "ДОМ";

@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  ControlOKO
+
+  Created by iMAC on 04.09.17.
+  Copyright © 2017 OKO. All rights reserved.
+*/
+"Welcome" = "Welcome";
+"Cancel" = "Cancel";
+"SMS services are not available" = "SMS services are not available";
+"OK" = "OK";
+"Message was cancelled" = "Message was cancelled";
+"Message failed" = "Message failed";
+"Message was sent" = "Message was sent";
+"Incorrect password. Try again." = "Incorrect password. Try again.";
+"<Device phone here>" = "<Device phone here>";
+"<Device password here>" = "<Device password here>";
+"Save" = "Save";
+"Settings" = "Settings";
+"<App password here>" = "<App password here>";
+"Enter app password (empty - OFF)." = "Enter app password (empty - OFF).";
+"Delete" = "Delete";
+"Object" = "Object";
+"will be deleted!!!" = "will be deleted!!!";
+"Missing value!" = "Missing value!";
+"Enter all fields" = "Object name, device phone and device password need to be present to be able to save your editing. In case of using the communication channel \"via internet\" it is also necessary to enter the IMEI of the device.";
+"Enter App Password" = "Enter App Password";
+"<App Password>" = "<App Password>";
+"Send command" = "Send command";
+"Stop session" = "Stop session";
+"Start session" = "Start session";
+"No connection to server" = "No connection to server";
+"Try connect to server" = "Try connect to server";
+"Connected to server" = "Connected to server";
+"Socket error" = "Socket error";
+"Server ACK" = "Server ACK";
+"Armed" = "Armed";
+"Disarmed" = "Disarmed";
+"Rele ON" = "Rele ON";
+"Rele OFF" = "Rele OFF";
+"Device ACK" = "Device ACK";
+"BLITS" = "BLITS";
+"OBEREG" = "OBEREG";
+"DOMOVOY" = "DOMOVOY";
+"DOM" = "DOM";
+
+
+
