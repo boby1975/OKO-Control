@@ -85,15 +85,6 @@ class Socket: NSObject, StreamDelegate {
             inputStream!.open()
             outputStream!.open()
             
-            /*
-            // Set Keep Alive Timeout for 600 seconds Hadler
-            UIApplication.shared.setKeepAliveTimeout (600, handler: {
-                if ((self.outputStream) != nil)
-                {
-                    self.PeriodicQuery()
-                }
-                });
-            */
             
             timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(Socket.PeriodicQuery), userInfo: nil, repeats: true)
             //RunLoop.current.add(timer, forMode: RunLoopMode.defaultRunLoopMode)

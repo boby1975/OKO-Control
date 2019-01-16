@@ -32,18 +32,5 @@ class StateController {
         objects[index] = object
         storageController.save(objects)
     }
-    
-    /*
-    func update(_ object: Object) {
-        for (index, storedObject) in objects.enumerated() {
-            guard storedObject.name == object.name else {
-                continue
-            }
-            objects[index] = object
-            storageController.save(objects)
-            break
-        }
-    }
-    */
-    
+        
 }

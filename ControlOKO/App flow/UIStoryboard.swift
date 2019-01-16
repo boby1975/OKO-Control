@@ -17,6 +17,9 @@ extension UIStoryboard {
     
     //dependency injection
     func configure(viewController: UIViewController) {
+        
+        print ("UIStoryboard dependency injection: \(viewController)")
+        
         if let navigationController = viewController as? UINavigationController {
             navigationController.viewControllers.first.map(configure(viewController:))
         }
@@ -37,6 +40,7 @@ extension UIStoryboard {
 //Every time a new contained view controller comes on screen, the tab bar controller notifies its delegate. This is where we can hook our dependency injection
 extension UIStoryboard: UITabBarControllerDelegate {
     public func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        print ("UIStoryboard UITabBarControllerDelegate dependency injection: \(tabBarController)")
         configure(viewController: viewController)
         return true
     }

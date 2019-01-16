@@ -7,8 +7,6 @@
 //
 
 import UIKit
-//import PushKit
-import AudioToolbox
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -55,85 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
-    /*
-     var backgroundUpdateTask: UIBackgroundTaskIdentifier!
-     var count = 0
-     var timer: Timer!
-     
-     func beginBackgroundUpdateTask() {
-     self.backgroundUpdateTask = UIApplication.shared.beginBackgroundTask(expirationHandler: {
-     self.endBackgroundUpdateTask_()
-     })
-     print ("beginBackgroundTask")
-     }
-     
-     func endBackgroundUpdateTask_() {
-     print ("TryBackgroundTask")
-     
-     
-     /*
-     if let backgroundUpdateTask_ = self.backgroundUpdateTask {
-     UIApplication.shared.endBackgroundTask(backgroundUpdateTask_)
-     self.backgroundUpdateTask = UIBackgroundTaskInvalid
-     print ("restartBackgroundTask")
-     
-     self.doBackgroundTask()
-     
-     }
-     */
-     }
-     
-     func endBackgroundUpdateTask() {
-     if let backgroundUpdateTask_ = self.backgroundUpdateTask {
-     UIApplication.shared.endBackgroundTask(backgroundUpdateTask_)
-     self.backgroundUpdateTask = UIBackgroundTaskInvalid
-     print ("endBackgroundTask")
-     
-     //self.count = 0
-     //self.timer.invalidate()
-     //print ("timer invalidate")
-     
-     }
-     }
-     
-     func doBackgroundTask() {
-     self.beginBackgroundUpdateTask()
-     DispatchQueue.global(qos: .background).async {
-     
-     
-     // Do something with the result.
-     self.timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(AppDelegate.displayAlert), userInfo: nil, repeats: true)
-     RunLoop.current.add(self.timer, forMode: RunLoopMode.defaultRunLoopMode)
-     RunLoop.current.run()
-     
-     while true {
-     
-     sleep (30)
-     self.count += 1
-     print ("do something: \(self.count)")
-     AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-     
-     }
-     
-     // End the background task.
-     //self.endBackgroundUpdateTask()
-     }
-     }
-     
-     func checkSocket () {
-     print ("checkSocket")
-     }
-     
-     func displayAlert() {
-     let note = UILocalNotification()
-     //note.alertBody = "As a test I'm hoping this will run in the background every X number of seconds..."
-     note.soundName = UILocalNotificationDefaultSoundName
-     //UIApplication.shared.scheduleLocalNotification(note)
-     count += 1
-     print ("Background note: \(note)")
-     }
-     */
     
 }
 
