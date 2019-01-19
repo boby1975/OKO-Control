@@ -2,8 +2,8 @@
 //  OKO_ControlUITests.swift
 //  OKO_ControlUITests
 //
-//  Created by iMAC on 1/19/19.
-//  Copyright © 2019 OKO. All rights reserved.
+//  Created by iMAC on 04.09.17.
+//  Copyright © 2017 OKO. All rights reserved.
 //
 
 import XCTest
