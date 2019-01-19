@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//not implemented yet
 enum EventCategory: Int {
     case ingoing_sms
     case outgoing_sms

@@ -31,7 +31,6 @@ class CreateObjectViewController: UIViewController, Stateful {
     @IBOutlet fileprivate var viaButtons: [UIButton]!
     
     var stateController: StateController!
-    //var appSettingsController: AppSettingsController!
     
     var object: Object?
     
@@ -247,7 +246,6 @@ private extension CreateObjectViewController {
     func registerNotifications() {
         let defaultCenter = NotificationCenter.default
         let appPasswordObserver = defaultCenter.addObserver(forName: NSNotification.Name.UIApplicationDidBecomeActive, object: nil, queue: nil, using: { _ in
-            //self.appSettingsController.checkAppPasswordAlert(viewController: self)
             self.storyboard?.checkAppPasswordAlert(viewController: self)
         })
         observers = [appPasswordObserver]

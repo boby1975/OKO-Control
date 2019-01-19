@@ -9,6 +9,9 @@
 import UIKit
 
 class InjectingSegue: UIStoryboardSegue {
+    
+    //This happens immediately after the prepare(for:sender:) method inside of the origin view controller.
+    //to hook dependency injection by segues
     override func perform() {
         print ("PerfomSegue to \(destination)")
         destination.storyboard?.configure(viewController: destination)

@@ -660,6 +660,7 @@ public class ToastManager {
     
 }
 
+
 // MARK: - ToastPosition
 public enum ToastPosition {
     case top

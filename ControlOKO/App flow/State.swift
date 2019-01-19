@@ -9,11 +9,11 @@
 import UIKit
 import Foundation
 
+//Keeps all the references to the shared model controller instances
 class State {
     let storageController = StorageController()
     let appSettingsController = AppSettingsController()
     let stateController: StateController
-    
     init() {
         stateController = StateController(storageController: storageController)
     }

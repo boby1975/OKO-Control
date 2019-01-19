@@ -31,6 +31,7 @@ class ObjectsListCell: UITableViewCell {
     }
 }
 
+
 extension ObjectsListCell {
     struct Model {
         let name: String

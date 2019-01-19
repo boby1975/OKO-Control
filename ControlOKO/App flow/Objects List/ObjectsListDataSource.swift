@@ -34,6 +34,4 @@ extension ObjectsListDataSource: UITableViewDataSource {
         return cell
     }
     
-
-    
 }

@@ -62,13 +62,7 @@ class ObjectsListViewController: UIViewController, Stateful {
         switch segue.identifier! {
         case "CreateObjectSegue":
             print ("CreateObjectSegue")
-            /*
-            if let navigationController = segue.destination as? UINavigationController,
-                let createObjectViewController = navigationController.viewControllers.first as? CreateObjectViewController {
-                //createObjectViewController.stateController = stateController
-                //createObjectViewController.appSettingsController = appSettingsController
-            }
-            */
+
         case "EditObjectSegue":
             print ("EditObjectSegue")
             if let navigationController = segue.destination as? UINavigationController,
@@ -78,8 +72,6 @@ class ObjectsListViewController: UIViewController, Stateful {
                 let object = dataSource.object(at: selectedIndex)
                 createObjectViewController.object = object
                 createObjectViewController.selectedIndex = selectedIndex
-                //createObjectViewController.stateController = stateController
-                //createObjectViewController.appSettingsController = appSettingsController
             }
             
         case "ObjectSegue":
@@ -90,8 +82,7 @@ class ObjectsListViewController: UIViewController, Stateful {
                 let object = dataSource.object(at: selectedIndex)
                 objectViewController.object = object
                 objectViewController.selectedIndex = selectedIndex
-                //objectViewController.stateController = stateController
-                //objectViewController.appSettingsController = appSettingsController
+
             }
             
         default:
@@ -154,7 +145,6 @@ private extension ObjectsListViewController {
     func registerNotifications() {
         let defaultCenter = NotificationCenter.default
         let appPasswordObserver = defaultCenter.addObserver(forName: NSNotification.Name.UIApplicationDidBecomeActive, object: nil, queue: nil, using: { _ in
-            //self.appSettingsController.checkAppPasswordAlert(viewController: self)
             self.storyboard?.checkAppPasswordAlert(viewController: self)
         })
         observers = [appPasswordObserver]

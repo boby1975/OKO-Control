@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C85AEFBA1F5DDEC3008B76DA"
-               BuildableName = "OKO-Control.app"
-               BlueprintName = "OKO-Control"
-               ReferencedContainer = "container:OKO-Control.xcodeproj">
+               BuildableName = "OKO_Control.app"
+               BlueprintName = "OKO_Control"
+               ReferencedContainer = "container:OKO_Control.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C8FECB7021F26C7F005897EB"
+               BuildableName = "ObjectTests.xctest"
+               BlueprintName = "ObjectTests"
+               ReferencedContainer = "container:OKO_Control.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "C85AEFCE1F5DDEC3008B76DA"
-               BuildableName = "OKO-ControlTests.xctest"
-               BlueprintName = "OKO-ControlTests"
-               ReferencedContainer = "container:OKO-Control.xcodeproj">
+               BuildableName = "OKO_ControlTests.xctest"
+               BlueprintName = "OKO_ControlTests"
+               ReferencedContainer = "container:OKO_Control.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C8FECB9A21F3467E005897EB"
+               BuildableName = "OKO_ControlUITests.xctest"
+               BlueprintName = "OKO_ControlUITests"
+               ReferencedContainer = "container:OKO_Control.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C85AEFBA1F5DDEC3008B76DA"
-            BuildableName = "OKO-Control.app"
-            BlueprintName = "OKO-Control"
-            ReferencedContainer = "container:OKO-Control.xcodeproj">
+            BuildableName = "OKO_Control.app"
+            BlueprintName = "OKO_Control"
+            ReferencedContainer = "container:OKO_Control.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +86,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C85AEFBA1F5DDEC3008B76DA"
-            BuildableName = "OKO-Control.app"
-            BlueprintName = "OKO-Control"
-            ReferencedContainer = "container:OKO-Control.xcodeproj">
+            BuildableName = "OKO_Control.app"
+            BlueprintName = "OKO_Control"
+            ReferencedContainer = "container:OKO_Control.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +105,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C85AEFBA1F5DDEC3008B76DA"
-            BuildableName = "OKO-Control.app"
-            BlueprintName = "OKO-Control"
-            ReferencedContainer = "container:OKO-Control.xcodeproj">
+            BuildableName = "OKO_Control.app"
+            BlueprintName = "OKO_Control"
+            ReferencedContainer = "container:OKO_Control.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

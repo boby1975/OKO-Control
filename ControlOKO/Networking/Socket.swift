@@ -76,9 +76,6 @@ class Socket: NSObject, StreamDelegate {
             inputStream!.delegate = self
             outputStream!.delegate = self
             
-            //inputStream?.setProperty(StreamNetworkServiceTypeValue.voIP.rawValue, forKey: Stream.PropertyKey.networkServiceType)
-            //outputStream?.setProperty(StreamNetworkServiceTypeValue.voIP, forKey: Stream.PropertyKey.networkServiceType)
-            
             inputStream!.schedule(in: .main, forMode: RunLoopMode.defaultRunLoopMode) //(in: .current, forMode: .commonModes)
             outputStream!.schedule(in: .main, forMode: RunLoopMode.defaultRunLoopMode) //(in: .current, forMode: .commonModes)
             
@@ -87,8 +84,6 @@ class Socket: NSObject, StreamDelegate {
             
             
             timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(Socket.PeriodicQuery), userInfo: nil, repeats: true)
-            //RunLoop.current.add(timer, forMode: RunLoopMode.defaultRunLoopMode)
-            //RunLoop.current.run()
             
             print("[SCKT]: Open Stream")
         } else {
@@ -182,7 +177,6 @@ class Socket: NSObject, StreamDelegate {
                         if let output = NSString(bytes: &buffer, length: bytesRead, encoding: String.Encoding.utf8.rawValue){
                             self.delegate?.socketDidReceiveMessage(stream: stream, message: output as String)
                             print("[SCKT]: Message received")
-                            //AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate)) // vibration
                         }
                     } else {
                         // Handle error
@@ -231,7 +225,6 @@ class Socket: NSObject, StreamDelegate {
         sendMessage(message: "{0}\n")
         count += 1
         print ("count: \(count)")
-        
     }
 
 }

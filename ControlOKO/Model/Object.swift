@@ -9,13 +9,15 @@
 import Foundation
 import UIKit
 
+//Represents the data of a object
+//Converts to a property list dictionary and vice versa
 struct Object {
     // saved properties
     let name: String
     let description: String
     let devicePhone: String
     let devicePassword: String
-    let deviceType: DeviceType
+    var deviceType: DeviceType
     let objectIcon: ObjectIcon
     let extraSettings: [ExtraSetting]
     let events: [Event]

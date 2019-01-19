@@ -56,7 +56,6 @@ extension DeviceTypePickerView: UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        //NotificationCenter.default.post(name: .deviceTypePickerChanged, object: self)
         selectPickerRowDelegate?.didSelectPickerRow(row: row)
     }
 }

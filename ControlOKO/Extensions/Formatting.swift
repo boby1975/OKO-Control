@@ -18,6 +18,7 @@ extension Float {
     }
 }
 
+
 extension String {
     var accountNumberFormatting: String {
         var formattedString = ""

@@ -8,7 +8,8 @@
 
 import UIKit
 
-//object icon data list
+//represents the data of a object icon
+
 struct ObjectIconData {
     static func getData() -> [ObjectIconModel] {
         var iconDataList = [ObjectIconModel]()

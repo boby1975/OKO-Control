@@ -8,6 +8,7 @@
 
 import Foundation
 
+//not implemented yet
 struct ExtraSetting {
     
     let item: SettingItem

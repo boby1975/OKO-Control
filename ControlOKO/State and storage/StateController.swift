@@ -9,6 +9,8 @@
 import Foundation
 
 //Model controller
+//Keeps the state of the objects
+//Stores the objects data into the StorageController
 class StateController {
     fileprivate let storageController: StorageController
     fileprivate(set) var objects: [Object]

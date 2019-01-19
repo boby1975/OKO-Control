@@ -10,6 +10,7 @@
 import UIKit
 
 //Model controller
+//Loads and saves the current app settings into the user defaults system
 class AppSettingsController {
     
     enum Keys: String {

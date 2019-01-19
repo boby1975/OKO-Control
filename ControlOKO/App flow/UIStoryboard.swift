@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Creates the global instances of the model controllers
 fileprivate let globalState = State()
 
 extension UIStoryboard {
@@ -15,18 +16,23 @@ extension UIStoryboard {
         return globalState
     }
     
-    //dependency injection
+    //performs dependency injection
     func configure(viewController: UIViewController) {
         
         print ("UIStoryboard dependency injection: \(viewController)")
         
         if let navigationController = viewController as? UINavigationController {
+            //to hook dependency injection to the first view controller
             navigationController.viewControllers.first.map(configure(viewController:))
         }
         if let tabBarController = viewController as? UITabBarController {
+            //to hook dependency injection to the first contained view controller
             tabBarController.viewControllers?.first.map(configure(viewController:))
+            //to hook dependency injection to the new contained view controller
             tabBarController.delegate = self
         }
+        
+        //to hook dependency injection to view controller by storyboard segues with class InjectingSegue
         if let statefulController = viewController as? Stateful {
             statefulController.stateController = state.stateController
         }
@@ -37,7 +43,7 @@ extension UIStoryboard {
     }
 }
 
-//Every time a new contained view controller comes on screen, the tab bar controller notifies its delegate. This is where we can hook our dependency injection
+//Every time a new contained view controller comes on screen, the tab bar controller notifies its delegate. This is where we can hook our dependency injection to the contained view controller
 extension UIStoryboard: UITabBarControllerDelegate {
     public func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         print ("UIStoryboard UITabBarControllerDelegate dependency injection: \(tabBarController)")

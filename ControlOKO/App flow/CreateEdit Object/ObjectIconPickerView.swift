@@ -26,7 +26,6 @@ extension ObjectIconPickerView: UIPickerViewDataSource {
 }
 
 extension ObjectIconPickerView: UIPickerViewDelegate {
- 
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return customHeight

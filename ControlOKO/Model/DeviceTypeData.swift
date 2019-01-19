@@ -8,7 +8,8 @@
 
 import UIKit
 
-//device type list
+//Represents the data of a device type
+
 struct DeviceTypeData {
     static func getData() -> [DeviceTypeModel] {
         var typeDataList = [DeviceTypeModel]()

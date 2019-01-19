@@ -21,7 +21,6 @@ class ObjectViewController: UIViewController, AppSettings {
     @IBOutlet weak var releOffImage: UIImageView!
        
     var object: Object!
-    //var stateController: StateController!
     var appSettingsController: AppSettingsController!
     var selectedIndex: Int!
     
@@ -33,7 +32,6 @@ class ObjectViewController: UIViewController, AppSettings {
         print ("ObjectDidLoad")
         if object.channel == 0 {
             tcpClient = Socket(server: appSettingsController.server, port: appSettingsController.port )
-            //tcpClient = Socket(server: "78.27.132.52", port: 31201 ) //for testing
             tcpClient?.delegate = self
         }
         
@@ -74,10 +72,7 @@ class ObjectViewController: UIViewController, AppSettings {
     
     
     
-    
-    
     //MARK: Actions
-    
     func tapOneAct(sender: UITapGestureRecognizer){
         
         if let tag = sender.view?.tag {
@@ -199,7 +194,6 @@ class ObjectViewController: UIViewController, AppSettings {
     func registerNotifications() {
         let defaultCenter = NotificationCenter.default
         let appPasswordObserver = defaultCenter.addObserver(forName: NSNotification.Name.UIApplicationDidBecomeActive, object: nil, queue: nil, using: { _ in
-            //self.appSettingsController.checkAppPasswordAlert(viewController: self)
             self.storyboard?.checkAppPasswordAlert(viewController: self)
             self.startSession()
         })
@@ -229,7 +223,6 @@ class ObjectViewController: UIViewController, AppSettings {
 extension ObjectViewController: MFMessageComposeViewControllerDelegate {
     
     //MARK: MFMessageComposeViewControllerDelegate
-    
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
         
         var msg=""

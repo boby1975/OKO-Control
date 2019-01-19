@@ -9,6 +9,8 @@
 import Foundation
 
 //Model controller
+//Fetches the objects from the plist file
+//Saves the data of the objects into a plist file
 class StorageController {
     fileprivate let documentsDirectoryURL = FileManager.default
         .urls(for: .documentDirectory, in: .userDomainMask)

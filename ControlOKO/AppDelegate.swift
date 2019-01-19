@@ -15,10 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //print ("didFinishLaunchingWithOptions")
         
         Appearance.setGlobalAppearance()
         
+        //to hook dependency injection to the initial view controller when the app launches
         if let rootViewController = window?.rootViewController {
             rootViewController.storyboard?.configure(viewController: rootViewController)
         }
@@ -35,7 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-        //self.doBackgroundTask()
         
         print("applicationDidEnterBackground")
     }
